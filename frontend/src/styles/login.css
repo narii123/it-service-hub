@@ -1,0 +1,128 @@
+/* Full page layout */
+.login-page{
+  height: calc(100vh - 70px); /* minus navbar height */
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e3a8a,
+    #2563eb,
+    #60a5fa
+  );
+
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+}
+.login-page{
+  min-height:100vh;
+  width:100%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background: linear-gradient(135deg,#1e3a8a,#2563eb,#3b82f6);
+  position:relative;
+  overflow:hidden;
+}
+.login-page::before{
+  content:"";
+  position:absolute;
+
+  width:600px;
+  height:600px;
+
+  background: radial-gradient(circle, rgba(255,255,255,0.25), transparent 70%);
+
+  top:-200px;
+  right:-150px;
+
+  filter:blur(40px);
+}
+
+/* Animated gradient like Stripe */
+@keyframes gradientMove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+/* Login card */
+.login-card{
+  width:380px;
+  padding:40px;
+
+  background:white;
+  border-radius:16px;
+
+  box-shadow:
+  0 20px 40px rgba(0,0,0,0.25);
+
+  text-align:center;
+  position:relative;
+  z-index:1;
+}
+
+/* Title */
+.login-card h1{
+  margin-bottom:8px;
+  font-size:32px;
+  color:#0f172a;
+}
+
+/* Subtitle */
+.subtitle{
+  color:#64748b;
+  margin-bottom:25px;
+}
+
+/* Inputs */
+.login-card input{
+  width:100%;
+  padding:14px;
+  margin:12px 0;
+
+  border-radius:8px;
+  border:1px solid #cbd5e1;
+
+  font-size:15px;
+}
+
+/* Button */
+.login-card button{
+ width:100%;
+
+  padding:12px;
+
+  border:none;
+
+  border-radius:8px;
+
+  background:#2563eb;
+
+  color:white;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:all 0.2s ease;
+}
+
+button:hover{
+  background:#1e40af;
+  transform:translateY(-1px);
+}
+/* Register text */
+.register{
+  margin-top:18px;
+}
+
+.register a{
+  color:#2563eb;
+  font-weight:500;
+  text-decoration:none;
+}

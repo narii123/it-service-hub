@@ -1,0 +1,11 @@
+The platform uses a commission-based revenue model similar to freelance marketplaces such as Upwork and Fiverr. When a client posts a service request, a percentage of the project budget is retained as a platform fee, while the remaining amount is paid to the professional upon project completion.
+
+	•	React-based frontend
+	•	Node.js + Express REST API backend
+	•	MongoDB database
+	•	JWT authentication with role-based access control
+	•	project lifecycle management
+	•	platform commission system
+	•	admin analytics dashboard
+
+    IT Service Hub is a platform connecting Nigerian tech professionals with international clients for remote IT services.
